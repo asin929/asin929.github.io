@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: 
+Disallow: /assets/
+Disallow: /archive.html
+Disallow: /categories.html
+Disallow: /pages.html
+Disallow: /rss.xml
+Disallow: /tags.html
+Disallow: /tools.html

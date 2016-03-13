@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ page.title }} - {{ site.author.name }}</title>
+    {% if page.tags %}
+      <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+    {% endif %}
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html | truncate: 190 }} - {{  site.author.name }}">
+    {% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap-3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link href="{{ ASSET_PATH }}/bootstrap-3.3.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <!-- google code prettify -->
+    <link href="{{ ASSET_PATH }}/google-code-prettify/prettify.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+  <!-- Skip to main content -->
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+
+   <div id="wrap">
+      <nav class="navbar navbar-default bs-docs-bar-top" role="navigation">
+       <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+          <ul class="nav navbar-nav">
+		<li><a href="/">Home</a></li>
+		<li><a href="/archive.html">Archive</a></li>
+		<li><a href="/categories.html">Categories</a></li>
+		<li><a href="/tags.html">Tags</a></li>
+		<li><a href="/tools.html">Tools</a></li>
+	  </ul>
+        <!-- site search -->
+          <form class="navbar-form navbar-right" role="search" target="_blank" action="http://www.baidu.com/baidu">
+            <div class="form-group">
+                <input name="word" type="text" class="form-control" placeholder="Search this site...">
+            </div>
+            <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+            <input name=tn type=hidden value="bds">
+            <input name=cl type=hidden value="3">
+            <input name=si type=hidden value="{{ site.production_sitename }}">
+            <input name=ct type=hidden value="2097152">
+          </form>
+        </div><!-- /.navbar-collapse -->
+       </div><!-- class="container" -->
+      </nav>
+
+    <!-- doc-container -->
+    <div class="container">
+
+        {{ content }}
+
+    </div> <!-- doc-container -->
+
+    </div><!-- div id="wrap" -->
+
+    <div id="footer">
+      <div class="container bs-docs-bar-footer">
+          <p><a href="https://github.com/{{site.author.github}}">Fork me on Github</a> &copy; {{ site.time | date: '%Y' }} by {{ site.author.name }}. </p>
+      </div>
+    </div>
+
+    {% include JB/analytics %}
+
+
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ ASSET_PATH }}/jquery-1.11.2.min.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/application.js"></script>
+    <script src="{{ ASSET_PATH }}/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        /*google-code-prettify*/
+        $('pre').addClass('prettyprint').attr('style', 'overflow:auto');
+        prettyPrint();
+
+        /* Tips */
+        $('pre .language-tips').parent().addClass('tom-callout-tips');
+
+        /* A link icon on the left of headers. */
+        $(".bs-docs-container h1,.bs-docs-container h2, .bs-docs-container h3, .bs-docs-container h4, .bs-docs-container h5, .bs-docs-container h6").each(function(i, el) {
+          var $el, icon, id;
+          $el = $(el);
+          id = $el.attr('id');
+          icon = '<span class="glyphicon glyphicon-link"></span>';
+          if (id) {
+             $el.prepend($("<a class='anchor' />").attr("href", "#" + id).html(icon));
+          }
+        })
+
+
+      });
+    </script>
+    
+    <script> 
+(function(a,b,c,d,e){function f(){var a=b.createElement("script");a.async=!0;
+a.src="//radar.cedexis.com/1/16156/radar.js";b.body.appendChild(a)}/\bMSIE 6/i
+.test(a.navigator.userAgent)||(a[c]?a[c](e,f,!1):a[d]&&a[d]("on"+e,f))})
+(window,document,"addEventListener","attachEvent","load");
+</script> 
+    
+  </body>
+</html>
