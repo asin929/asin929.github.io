@@ -18,7 +18,7 @@ tags : [software,shortcut]
 
 + [codeblocks快捷键](http://blog.csdn.net/lawerful/article/details/6083113)
 + [Eclipse 常用快捷键 (动画讲解)](http://www.cnblogs.com/TankXiao/p/4018219.html)
-+ [NetBeans 快捷键汇总]()
++ [NetBeans 快捷键汇总](http://asin929.github.io/2016/04/06/NetBeans-Shortcut)
 
 
 ## 浏览器
