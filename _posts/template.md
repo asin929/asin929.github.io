@@ -4,7 +4,7 @@ tagline: ""
 last_updated: null
 category : template
 layout: post
-tags : [template, myblog]
+tags : [tag1, tag2]
 ---
 {% include JB/setup %}
 
