@@ -41,3 +41,4 @@ tags : [software,shortcut]
 # 参考
 [快捷键大全](http://givemetip.com/)
 
+![highlights of netbeans ide 8 0 keyboard shortcuts code templates](https://cloud.githubusercontent.com/assets/10795273/14315549/9dca82ce-fc30-11e5-96c4-76a5b34d8441.png)
