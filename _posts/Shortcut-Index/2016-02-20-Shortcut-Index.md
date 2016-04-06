@@ -40,3 +40,4 @@ tags : [software,shortcut]
 ## 参考
 [快捷键大全](http://givemetip.com/)
 
+
