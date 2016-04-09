@@ -24,5 +24,5 @@ tags : [program, document, PostgreSQL]
 + [PostgreSQL教程,PostgreSQL下载,PostgreSQL中文手册](http://www.yiibai.com/html/postgresql/)
 + [PostgreSQL: Documentation: 9.3: Functions and Operators](http://www.postgresql.org/docs/9.3/static/functions.html)
 + [The PostgreSQL™ JDBC Interface](https://jdbc.postgresql.org/documentation/head/index.html)
-+ [PostgreSQL学习手册(函数和操作符<一>) - Stephen_Liu - 博客园](http://www.cnblogs.com/stephen-liu74/archive/2012/05/02/2294071.html)
++ [PostgreSQL学习手册](http://www.cnblogs.com/stephen-liu74/archive/2012/05/02/2294071.html)
 + [在线文档-postgresql9.1](http://tool.oschina.net/apidocs/apidoc?api=postgresql9.1)
