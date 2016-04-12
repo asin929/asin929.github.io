@@ -33,6 +33,7 @@ tags : [software,shortcut]
 ## 办公应用
 
 ### Word快捷键大全
++ [LibreOffice Writer 的快捷键](https://help.libreoffice.org/3.3/Writer/Shortcut_Keys_for_Writer/zh-CN#.E7.94.A8.E4.BA.8E_LibreOffice_Writer_.E7.9A.84.E5.8A.9F.E8.83.BD.E9.94.AE)
 + [WORD各种快捷键神操作](http://www.25pp.com/news/news_80248.html)
 + [Word快捷键大全](http://givemetip.com/shortcut/office/2011-11-17/5.html)
 
