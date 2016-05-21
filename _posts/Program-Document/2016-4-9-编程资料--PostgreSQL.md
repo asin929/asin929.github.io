@@ -14,6 +14,7 @@ tags : [program, document, PostgreSQL]
 
 ## 快速入门
 
++ [PostgreSQL--易百教程](http://www.yiibai.com/html/postgresql/2013/080116.html)
 + [PostgreSQL新手入门 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2013/12/getting_started_with_postgresql.html)
 + [Linux下免费数据库PostgreSQL开发入门](http://www.ibm.com/developerworks/cn/linux/l-pgsql/)
 + [初识Postgresql和Sqoop - smile_zjw的个人页面 - 开源中国社区](http://my.oschina.net/zhangjiawen/blog/180637#OSC_h2_2)
