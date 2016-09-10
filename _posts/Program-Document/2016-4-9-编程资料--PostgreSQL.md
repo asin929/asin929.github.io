@@ -34,6 +34,6 @@ tags : [program, document, PostgreSQL]
 
 + [SQL 命令](http://www.postgres.cn/docs/9.3/sql-commands.html)
 + [SQL关键字](http://www.postgres.cn/docs/9.3/sql-keywords-appendix.html)
-
++ [索引](http://www.postgres.cn/docs/9.3/bookindex.html)
 
 
